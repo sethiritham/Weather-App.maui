@@ -13,6 +13,7 @@ namespace Weather_App.maui
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Roboto_Condensed-Bold.tff", "RobotoBold");
                 });
 
 #if DEBUG

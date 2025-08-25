@@ -15,23 +15,34 @@
 
             <Label
                 Text="23° C"
-                FontSize="96"
+                FontSize="144"
                 TextColor="White"
-                FontAttributes="Bold" >
+                FontAttributes="Bold"
+                FontFamily="RobotoBold">
                 <Label.Shadow>
 
                 <Shadow
                         Brush="Black"
-                        Offset="6,2"
-                        Radius="1.6"
-                        Opacity="5"></Shadow>
+                        Offset="6,6"
+                        Radius="6"
+                        Opacity="0.6"></Shadow>
 
                 </Label.Shadow>
             </Label>
             <Label
-                Text="Bengaluru"
-                FontSize="32"
-                TextColor="White" />
+                Text="Yelahanka, Bengaluru"
+                FontSize="35"
+                TextColor="White" 
+                HorizontalTextAlignment="Center"
+                FontFamily="RobotoBold">
+                <Label.Shadow>
+                <Shadow
+                        Brush ="Black"
+                        Offset="2,2"
+                        Radius="5"
+                        Opacity="0.6"></Shadow>
+                </Label.Shadow>
+            </Label>
 
         </VerticalStackLayout>
     </Grid>
