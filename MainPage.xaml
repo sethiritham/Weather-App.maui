@@ -11,38 +11,63 @@
         <VerticalStackLayout
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            Spacing="25">
+            Spacing="12"
+            Padding="20">
+            <Entry
+                x:Name="CityEntry" Placeholder = "Enter city name"
+                PlaceholderColor="AliceBlue"></Entry>
+            <Button
+                Text="Get Weather" Clicked="OnGetWeatherClicked"
+                BackgroundColor="AliceBlue"></Button>
 
             <Label
-                Text="23° C"
+                x:Name= "TempLabel" 
                 FontSize="144"
                 TextColor="White"
                 FontAttributes="Bold"
-                FontFamily="RobotoBold">
+                FontFamily="RobotoBold"
+                Text="23°C">
                 <Label.Shadow>
 
                 <Shadow
                         Brush="Black"
                         Offset="6,6"
-                        Radius="6"
+                        Radius="0"
                         Opacity="0.6"></Shadow>
 
                 </Label.Shadow>
             </Label>
             <Label
-                Text="Yelahanka, Bengaluru"
+                x:Name="CityLabel"
                 FontSize="35"
                 TextColor="White" 
                 HorizontalTextAlignment="Center"
-                FontFamily="RobotoBold">
+                FontFamily="RobotoBold"
+                Text="Your City">
                 <Label.Shadow>
                 <Shadow
                         Brush ="Black"
-                        Offset="2,2"
-                        Radius="5"
+                        Offset="3,3"
+                        Radius="0"
                         Opacity="0.6"></Shadow>
                 </Label.Shadow>
             </Label>
+            <Label
+                x:Name="DescriptionLabel"
+                FontSize="20"
+                TextColor="White" 
+                HorizontalTextAlignment="Center"
+                FontFamily="RobotoBold"
+                Text="Your city climate description">
+                <Label.Shadow>
+                    <Shadow
+                    Brush ="Black"
+                    Offset="2,2"
+                    Radius="0"
+                    Opacity="0.6"></Shadow>
+                </Label.Shadow>
+            </Label>
+            
 
         </VerticalStackLayout>
     </Grid>
