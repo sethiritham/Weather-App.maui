@@ -1,75 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Weather_App.maui.MainPage">
+             xmlns:local="clr-namespace:Weather_App.maui"
+             x:Class="Weather_App.maui.MainPage"
+             x:Name="this"
+             BackgroundColor="Transparent"
+             Shell.NavBarIsVisible="False">
 
-    <Grid>
-        <Image
-            Source="clouds.png"
-            Aspect="AspectFill" />
+    <ContentPage.Resources>
+        <local:ScreenProportionalConverter x:Key="ProportionalConverter" />
+    </ContentPage.Resources>
 
-        <VerticalStackLayout
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Spacing="12"
-            Padding="20">
-            <Entry
-                x:Name="CityEntry" Placeholder = "Enter city name"
-                PlaceholderColor="AliceBlue"></Entry>
-            <Button
-                Text="Get Weather" Clicked="OnGetWeatherClicked"
-                BackgroundColor="AliceBlue"></Button>
+    <Frame CornerRadius="0"
+           Padding="0"
+           HorizontalOptions="Fill"
+           VerticalOptions="Fill"
+           BackgroundColor="Transparent">
 
-            <Label
-                x:Name= "TempLabel" 
-                FontSize="144"
-                TextColor="White"
-                FontAttributes="Bold"
-                FontFamily="RobotoBold"
-                Text="23°C">
-                <Label.Shadow>
+        <Grid>
+            <Image Source="clouds.png" Aspect="AspectFill" />
 
-                <Shadow
-                        Brush="Black"
-                        Offset="6,6"
-                        Radius="0"
-                        Opacity="0.6"></Shadow>
+            <AbsoluteLayout BackgroundColor="Transparent">
 
-                </Label.Shadow>
-            </Label>
-            <Label
-                x:Name="CityLabel"
-                FontSize="35"
-                TextColor="White" 
-                HorizontalTextAlignment="Center"
-                FontFamily="RobotoBold"
-                Text="Your City">
-                <Label.Shadow>
-                <Shadow
-                        Brush ="Black"
-                        Offset="3,3"
-                        Radius="0"
-                        Opacity="0.6"></Shadow>
-                </Label.Shadow>
-            </Label>
-            <Label
-                x:Name="DescriptionLabel"
-                FontSize="20"
-                TextColor="White" 
-                HorizontalTextAlignment="Center"
-                FontFamily="RobotoBold"
-                Text="Your city climate description">
-                <Label.Shadow>
-                    <Shadow
-                    Brush ="Black"
-                    Offset="2,2"
-                    Radius="0"
-                    Opacity="0.6"></Shadow>
-                </Label.Shadow>
-            </Label>
-            
+                <Label x:Name="TempLabel"
+                       Text="23°C"
+                       TextColor="#2C2C2C"
+                       FontAttributes="Bold"
+                       FontFamily="RobotoBold"
+                       AbsoluteLayout.LayoutBounds="0.198, 0.73, AutoSize, AutoSize"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"
+                       FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='5'}" />
 
-        </VerticalStackLayout>
-    </Grid>
+                <Label x:Name="CityLabel"
+                       Text="Bengaluru"
+                       TextColor="#2C2C2C"
+                       AbsoluteLayout.LayoutBounds="0.1916, 0.779, AutoSize, AutoSize"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"
+                       FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.3'}" />
 
+                <Image x:Name="WeatherIcon"
+                       Source="weather_icon.png"
+                       AbsoluteLayout.LayoutBounds="0.265, 0.779, AutoSize, AutoSize"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"
+                       HeightRequest="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.55'}"
+                       WidthRequest="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.55'}"/>
+
+                <Border Stroke="Gray"
+                        StrokeThickness="0,0,0,1"
+                        Padding="8,0"
+                        AbsoluteLayout.LayoutBounds="0.75, 0.25, 0.2, AutoSize"
+                        AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Entry x:Name="CityEntry"
+                               Grid.Column="0"
+                               Placeholder="Search..."
+                               BackgroundColor="Transparent"
+                               VerticalOptions="Center" />
+
+                        <ImageButton Grid.Column="1"
+                                     Source="search_icon.png"
+                                     HeightRequest="20"
+                                     WidthRequest="20"
+                                     BackgroundColor="Transparent"
+                                     Clicked="OnGetWeatherClicked" />
+                    </Grid>
+                </Border>
+
+            </AbsoluteLayout>
+        </Grid>
+    </Frame>
 </ContentPage>
