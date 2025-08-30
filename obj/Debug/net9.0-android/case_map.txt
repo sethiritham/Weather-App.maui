@@ -1,0 +1,6 @@
+images\clouds;images\clouds
+images\dotnet_bot;images\dotnet_bot
+images\search_bar;images\search_bar
+images\search_button;images\search_button
+images\weather_icon;images\weather_icon
+raw\aboutassets;raw\AboutAssets

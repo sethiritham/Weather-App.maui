@@ -1,0 +1,12 @@
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Weather App.maui.csproj.AssemblyReference.cache
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Users\Rizzam\Documents\CODES\C++\Weather App.maui\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Weather App.maui.GeneratedMSBuildEditorConfig.editorconfig

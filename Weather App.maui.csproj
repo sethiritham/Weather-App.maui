@@ -60,7 +60,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Include="Weather_App.maui.csproj" />
+	  <None Include="App_Logic\Weather_App.maui.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
