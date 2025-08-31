@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Qqu3Jtwo7n0=",
+  "dgSpecHash": "qjiQW6+WCLU=",
   "success": true,
   "projectFilePath": "C:\\Users\\Rizzam\\Documents\\CODES\\C++\\Weather App.maui\\Weather App.maui.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Rizzam\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\Rizzam\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\Rizzam\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\Rizzam\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

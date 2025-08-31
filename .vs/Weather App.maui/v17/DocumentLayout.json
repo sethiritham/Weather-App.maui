@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|c:\\users\\rizzam\\documents\\codes\\c\u002B\u002B\\weather app.maui\\app_panels\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|solutionrelative:app_panels\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|c:\\users\\rizzam\\documents\\codes\\c\u002B\u002B\\weather app.maui\\app_panels\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|solutionrelative:app_panels\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|c:\\users\\rizzam\\documents\\codes\\c\u002B\u002B\\weather app.maui\\app_logic\\weathermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|solutionrelative:app_logic\\weathermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|c:\\users\\rizzam\\documents\\codes\\c\u002B\u002B\\weather app.maui\\app_logic\\weatherservice.maui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|solutionrelative:app_logic\\weatherservice.maui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|c:\\users\\rizzam\\documents\\codes\\c\u002B\u002B\\weather app.maui\\app_logic\\weatherviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|solutionrelative:app_logic\\weatherviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|c:\\users\\rizzam\\documents\\codes\\c\u002B\u002B\\weather app.maui\\app_logic\\geolocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3850CE-D78B-4056-BFA8-D9EBA651B813}|Weather App.maui.csproj|solutionrelative:app_logic\\geolocationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherModels.cs",
+              "DocumentMoniker": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Logic\\WeatherModels.cs",
+              "RelativeDocumentMoniker": "App_Logic\\WeatherModels.cs",
+              "ToolTip": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Logic\\WeatherModels.cs",
+              "RelativeToolTip": "App_Logic\\WeatherModels.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T06:52:15.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherService.maui.cs",
+              "DocumentMoniker": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Logic\\WeatherService.maui.cs",
+              "RelativeDocumentMoniker": "App_Logic\\WeatherService.maui.cs",
+              "ToolTip": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Logic\\WeatherService.maui.cs",
+              "RelativeToolTip": "App_Logic\\WeatherService.maui.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T06:52:26.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Panels\\MainPage.xaml",
+              "RelativeDocumentMoniker": "App_Panels\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Panels\\MainPage.xaml",
+              "RelativeToolTip": "App_Panels\\MainPage.xaml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAKsAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-30T19:46:43.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Panels\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "App_Panels\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Panels\\MainPage.xaml.cs",
+              "RelativeToolTip": "App_Panels\\MainPage.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAWwDcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T06:52:04.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherViewService.cs",
+              "DocumentMoniker": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Logic\\WeatherViewService.cs",
+              "RelativeDocumentMoniker": "App_Logic\\WeatherViewService.cs",
+              "ToolTip": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Logic\\WeatherViewService.cs",
+              "RelativeToolTip": "App_Logic\\WeatherViewService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T17:32:45.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GeoLocationService.cs",
+              "DocumentMoniker": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Logic\\GeoLocationService.cs",
+              "RelativeDocumentMoniker": "App_Logic\\GeoLocationService.cs",
+              "ToolTip": "C:\\Users\\Rizzam\\Documents\\CODES\\C\u002B\u002B\\Weather App.maui\\App_Logic\\GeoLocationService.cs",
+              "RelativeToolTip": "App_Logic\\GeoLocationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T07:42:53.193Z"
             }
           ]
         }

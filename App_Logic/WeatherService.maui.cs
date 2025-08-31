@@ -1,30 +1,41 @@
-﻿using System.Text.Json.Serialization;
-using System.Text.Json;
-using System.Threading.Tasks;
-using System.Net.Http.Json;
-using Weather_App.maui;
-public class WeatherService
+﻿using System.Net.Http.Json;
+using System.Diagnostics;
+
+namespace Weather_App.maui
 {
-    private readonly HttpClient httpClient;
-    private const string weather_API = "02efb388165cfcf82cc2763ca3556dba";
-    public WeatherService()
+    public class WeatherService
     {
-        httpClient = new HttpClient();
-    }
+        private readonly HttpClient _httpClient;
+        private readonly GeoLocationService _geoLocationService;
+        private const string ApiKey = "02efb388165cfcf82cc2763ca3556dba"; 
 
-    public async Task<WeatherInfo> GetWeatherInfoAsync(string city)
-    {
-        try
+        public WeatherService()
         {
-            string APIurl = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={weather_API}&units=metric";
-            var weatherData = await httpClient.GetFromJsonAsync<WeatherInfo>(APIurl);
-            return weatherData;
+            _httpClient = new HttpClient();
+            _geoLocationService = new GeoLocationService();
         }
-        catch (Exception ex)
+
+        public async Task<OneCallApiResponse?> GetOneCallApiDataAsync(string city)
         {
-            Console.WriteLine("OOPS! Could'nt fetch data from the NET");
-            return null;
+            var coordinates = await _geoLocationService.GetCoordinatesForCityAsync(city);
+            if (coordinates == null)
+            {
+                Debug.WriteLine("Could not get coordinates for the city.");
+                return null;
+            }
+
+            var url = $"https://api.openweathermap.org/data/3.0/onecall?lat={coordinates.Value.Lat}&lon={coordinates.Value.Lon}&appid={ApiKey}&units=metric";
+
+            try
+            {
+                var weatherData = await _httpClient.GetFromJsonAsync<OneCallApiResponse>(url);
+                return weatherData;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error fetching weather data: {ex.Message}");
+                return null;
+            }
         }
     }
-
 }
