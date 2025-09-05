@@ -4,7 +4,7 @@ namespace Weather_App.maui
 {
     public class ScreenProportionalConverter : IValueConverter
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public object? Convert(object? value, Type? targetType, object? parameter, CultureInfo? culture)
         {
             if (value is double screenWidth && parameter is string percentageStr)
             {

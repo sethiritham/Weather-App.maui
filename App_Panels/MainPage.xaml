@@ -14,12 +14,12 @@
     <Frame CornerRadius="0" Padding="0" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Transparent">
         <Grid>
             <Image x:Name="DefaultBG" Source="snowy.png" Aspect="AspectFill" Opacity="1"/>
-            <Image x:Name ="BackgroundImage" Source="clouds.png" Aspect="AspectFill" Opacity="0"
+            <Image x:Name ="BackgroundImage" Source="snowy.png" Aspect="AspectFill" Opacity="0"
                    />
 
             <AbsoluteLayout BackgroundColor="Transparent">
 
-                
+
                 <Label x:Name="TempLabel"
                        Text="23°C"
                        TextColor="#FFFFFF"
@@ -156,10 +156,27 @@
                 AbsoluteLayout.LayoutFlags="PositionProportional"
                 FontFamily="Avenir"
                 FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1'}" />
-                
-                
-                
 
+                <Border
+                    Stroke ="Transparent"
+                    AbsoluteLayout.LayoutBounds="0.215, 0.25, AutoSize, AutoSize"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    >
+                    <Label
+                    x:Name="Summary"
+                    Text="Expect a day of partly cloudy with rain"
+                    FontAttributes="Italic"
+                    FontFamily="Avenir"
+                    TextColor="#B4B4B4"
+                    HorizontalTextAlignment="Start"
+                    AbsoluteLayout.LayoutBounds="0.215, 0.25, AutoSize, AutoSize"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    LineBreakMode="WordWrap"
+                    FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1'}" />
+
+
+                </Border>
+                
                 <Label x:Name="CityHumidity"
                        Text="50%"
                        TextColor="#2c2c2c"
@@ -168,13 +185,20 @@
                        AbsoluteLayout.LayoutFlags="PositionProportional"
                        IsVisible="False" FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='2'}" />
 
-                <Image x:Name="WeatherIcon"
-                       Source="weather_icon.png"
+                <Image x:Name="DefaultIcon"
+                       Source="snow_icon.png"
                        AbsoluteLayout.LayoutBounds="0.265, 0.779, AutoSize, AutoSize"
                        AbsoluteLayout.LayoutFlags="PositionProportional"
                        HeightRequest="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.55'}"
                        WidthRequest="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.55'}"/>
-
+                <Image
+                    x:Name="NextIcon"
+                    Source="rain_icon.png"
+                    AbsoluteLayout.LayoutBounds="0.265, 0.779, AutoSize, AutoSize"
+                    Opacity="0"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    HeightRequest="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.55'}"
+                    WidthRequest="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.55'}"/>
                 <Border Stroke="#2c2c2c"
                         StrokeThickness="0"
                         Padding="8,0"
@@ -199,30 +223,6 @@
                                      Clicked="OnGetWeatherClicked"
                                      BackgroundColor="Transparent"/>
                     </Grid>
-                </Border>
-                <Border x:Name="HoverPanel"
-                        BackgroundColor="#2c2c2c"
-                        Padding="15"
-                        StrokeShape="RoundRectangle 20"
-                        Stroke="#2c2c2c"
-                        Opacity="0.9"
-                        IsVisible="False"
-                        AbsoluteLayout.LayoutBounds="0.2, 0.3, 0.45, 0.5"
-                        AbsoluteLayout.LayoutFlags="All">
-                    <Label
-                        x:Name="WeatherDetails"
-                        BackgroundColor="Transparent"
-                        Text="Humidity:"
-                        FontFamily="RobotoBold"
-                        FontSize="20"
-                        AbsoluteLayout.LayoutBounds="1.3,  0.5, AutoSize, AutoSize"
-                        AbsoluteLayout.LayoutFlags="SizeProportional,SizeProportional"
-                        TranslationX="10"
-                        TranslationY="13"></Label>
-                    <Border.Shadow>
-                        <Shadow Brush="Black" Opacity="0.45" Radius="08" Offset="0,6"/>
-                    </Border.Shadow>
-
                 </Border>
 
             </AbsoluteLayout>
