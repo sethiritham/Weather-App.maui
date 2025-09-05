@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Threading.Tasks;
 using Microsoft.Maui.ApplicationModel;
 
 
@@ -7,11 +8,12 @@ namespace Weather_App.maui
     public partial class MainPage : ContentPage
     {
         private readonly WeatherService _weatherService;
-
+        private bool isdefaultactive = true;
         public MainPage()
         {
             InitializeComponent();
             _weatherService = new WeatherService();
+            
         }
 
         protected override async void OnAppearing()
@@ -48,9 +50,13 @@ namespace Weather_App.maui
                 ? $"{(int)weatherData.Current.FeelsLike}°C"
                 : string.Empty;
             var description = today?.Summary;
+            int ID = weatherData?.Current?.Weather[0]?.ID ?? 0;
+            System.Diagnostics.Debug.WriteLine($"Weather ID received: {ID}");
 
-            MainThread.BeginInvokeOnMainThread(() =>
+
+            MainThread.BeginInvokeOnMainThread(async () =>
             {
+                await ChangeBackgroundAsync(ID, DefaultBG, BackgroundImage);
                 if (MaximumTemperature != null) MaximumTemperature.Text = maxTemp;
                 if (TempLabel != null) TempLabel.Text = currentTemp;
                 if (CityLabel != null) CityLabel.Text = city;
@@ -68,5 +74,31 @@ namespace Weather_App.maui
                 if (feelsLabel != null && !string.IsNullOrEmpty(feelsLike)) feelsLabel.Text = feelsLike;
             });
         }
+
+        public async Task ChangeBackgroundAsync(int ID, Image defaultBG, Image nextBG)
+        {
+            string newImageSource = ID switch
+            {
+                800 => "sunny.png",
+                >= 200 and < 300 => "thunderstorm.png",
+                >= 300 and < 400 => "rainy.png",
+                >= 500 and < 600 => "rainy.png",
+                >= 600 and < 700 => "snowy.png",
+                > 800 and < 810 => "clouds.png",
+                _ => "dusty.png"
+            };
+
+            Image currentImage = isdefaultactive ? defaultBG : nextBG;
+            Image nextImage = isdefaultactive ? nextBG : defaultBG;
+
+            nextImage.Source = newImageSource;
+
+            await Task.WhenAll(currentImage.FadeTo(0, 1000), nextImage.FadeTo(1, 1000));
+
+            isdefaultactive = !isdefaultactive;
+
+        }
+
+        
     }
 }

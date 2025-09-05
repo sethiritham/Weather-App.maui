@@ -1,5 +1,6 @@
-﻿using System.Net.Http.Json;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using System.Net.Http.Json;
+using System.Text.Json.Serialization;
 
 namespace Weather_App.maui
 {
@@ -10,7 +11,10 @@ namespace Weather_App.maui
 
         private class GeoResult
         {
+            [JsonPropertyName("lat")]
             public double Lat { get; set; }
+
+            [JsonPropertyName("lon")]
             public double Lon { get; set; }
         }
 

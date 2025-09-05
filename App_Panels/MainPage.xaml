@@ -13,7 +13,8 @@
 
     <Frame CornerRadius="0" Padding="0" HorizontalOptions="Fill" VerticalOptions="Fill" BackgroundColor="Transparent">
         <Grid>
-            <Image Source="clouds.png" Aspect="AspectFill"
+            <Image x:Name="DefaultBG" Source="snowy.png" Aspect="AspectFill" Opacity="1"/>
+            <Image x:Name ="BackgroundImage" Source="clouds.png" Aspect="AspectFill" Opacity="0"
                    />
 
             <AbsoluteLayout BackgroundColor="Transparent">

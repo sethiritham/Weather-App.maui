@@ -55,5 +55,9 @@ namespace Weather_App.maui
 
         [JsonPropertyName("icon")]
         public string? Icon { get; set; }
+
+        [JsonPropertyName("id")]
+
+        public int? ID { get; set; }
     }
 }
