@@ -28,21 +28,10 @@
                        AbsoluteLayout.LayoutBounds="0.2, 0.72, AutoSize, AutoSize"
                        AbsoluteLayout.LayoutFlags="PositionProportional"
                        FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='5'}" />
-                <Label x:Name="Description"
-                        Text="Broken clouds"
-                        TextColor="#B4B4B4"
-                        FontAttributes="Italic"
-                        HorizontalTextAlignment="Start"
-                        FontFamily="AvenirBook"
-                        AbsoluteLayout.LayoutBounds="0.25, 0.23, AutoSize, AutoSize"
-                        IsVisible="False"
-                        AbsoluteLayout.LayoutFlags="PositionProportional"
-                        FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.1'}" />
-    
                 <Label x:Name="CityLabel"
                        Text="Bengaluru"
                        TextColor="White"
-                       AbsoluteLayout.LayoutBounds="0.1916, 0.779, AutoSize, AutoSize"
+                       AbsoluteLayout.LayoutBounds="0.1946, 0.779, AutoSize, AutoSize"
                        AbsoluteLayout.LayoutFlags="PositionProportional"
                        FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.3'}" />
                 <Label x:Name="MaximumTemperature"
@@ -75,14 +64,14 @@
                         FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.1'}" />
 
                 <Label
-                x:Name="TomorrowForecastTemp"
-                Text="23°C"
-                TextColor="White"
-                AbsoluteLayout.LayoutBounds="0.79, 0.763, AutoSize, AutoSize"
-                AbsoluteLayout.LayoutFlags="PositionProportional"
+                    x:Name="TomorrowForecastTemp"
+                    Text="23°C"
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds="0.79, 0.763, AutoSize, AutoSize"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
     
-                FontFamily="Avenir"
-                FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.3'}" />
+                    FontFamily="Avenir"
+                    FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1.3'}" />
                 <Label
                 x:Name="TomorrowForecast"
                 Text="Tomorrow's Forecast"
@@ -159,18 +148,16 @@
 
                 <Border
                     Stroke ="Transparent"
-                    AbsoluteLayout.LayoutBounds="0.215, 0.25, AutoSize, AutoSize"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.225, 0.25, 0.2, AutoSize"
+                    AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"
                     >
                     <Label
                     x:Name="Summary"
                     Text="Expect a day of partly cloudy with rain"
                     FontAttributes="Italic"
-                    FontFamily="Avenir"
+                    FontFamily="AvenirBook"
                     TextColor="#B4B4B4"
                     HorizontalTextAlignment="Start"
-                    AbsoluteLayout.LayoutBounds="0.215, 0.25, AutoSize, AutoSize"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
                     LineBreakMode="WordWrap"
                     FontSize="{Binding Path=Width, Source={x:Reference this}, Converter={StaticResource ProportionalConverter}, ConverterParameter='1'}" />
 
@@ -213,7 +200,8 @@
                                TextColor="White"
                                BackgroundColor="Transparent"
                                VerticalOptions="Center"
-                               TranslationY="-12"/>
+                               TranslationY="-12"
+                               Completed ="OnGetWeatherClicked"/>
                         <ImageButton Grid.Column="1"
                                      Source="search_button.png"
                                      HeightRequest="20"
